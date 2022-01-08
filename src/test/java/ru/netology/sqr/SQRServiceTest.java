@@ -12,7 +12,7 @@ class SQRServiceTest {
             "'negative test, zero SQR', 10, 10, 0",
             "'negative test, uncorrect expected', 10, 10, 1"
     })
-     void calculateSQR(String name, int min, int max, int expected) {
+     void shouldCalculateSQR(String name, int min, int max, int expected) {
 
         SQRService service = new SQRService();
         int actual = service.calculateSQR(min, max);
